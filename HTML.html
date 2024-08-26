@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+       body {
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+            background-color:hsl(0, 0%, 95%);
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table, th, td {
+            margin: 0 auto; /* Automatic left and right margins for centering */
+            max-width: 900px; /*Optional: Set a maximum width for the content */
+            border: 5px solid blueviolet;
+        }
+        .container {
+            display: flex;
+            grid-template-columns: 1fr; /* Single column layout */
+            gap: 10px;
+            max-width: 1170px;
+            margin: 0 auto; /* Automatic left and right margins for centering */
+            max-width: 900px; /*Optional: Set a maximum width for the content */
+        }
+        .row {
+            margin: 0 auto; /* Automatic left and right margins for centering */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul {
+            margin: 0 auto; /* Automatic left and right margins for centering */
+            max-width: 900px; /*Optional: Set a maximum width for the content */
+            list-style: none;
+        }
+        .left-image {
+            width: 100%;
+            height: 210px;
+            border: 5px solid blueviolet; /* Add border here */
+            border-radius: 20px; /* Add border radius here */
+        }
+        .right-image{
+            max-width: 100%;
+            height: auto;
+            border: 5px solid blueviolet; /* Add border here */
+            border-radius: 20px; /* Add border radius here */
+        }
+        .image-container {
+            margin: 0 auto; /* Automatic left and right margins for centering */
+            max-width: 900px; /*Optional: Set a maximum width for the content */
+            display: grid;
+            gap: 62px;
+            grid-template-columns: 1fr 1fr; /* Two columns for images */
+        }
+ 
+        .footer {
+            background-color:#ffffb3;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px; /* Adjust this padding to fit the container within the screen */
+        }
+ 
+        .footer .row {
+            display: flex;
+            margin:8px 8px 8px 100px;
+        }
+ 
+        .footer .col-3 {
+            flex: 0 0 25%; /* Each column takes up 25% of the width */
+            max-width: 40%;
+            padding:4px; /* Add padding to each column */
+            margin: 10px 10px 10px 50px;
+        }
+ 
+        .footer h4 {
+            font-size:20px;
+            color:#ff8093;
+            text-transform:capitalize;
+            font-weight:25px;
+            position:relative;
+        }
+ 
+        .footer ul {
+            padding: 0px;
+            
+        }
+ 
+        .footer ul li {
+            margin-bottom: 10px;
+        
+        }
+ 
+        .footer ul li a {
+            text-decoration:underline;
+            font-size:19px;
+            text-transform: capitalize;
+            color: blueviolet;
+            font-weight: 200px;
+            color: blue;
+            transition: all 0.5s ease;
+        }
+ 
+        .footer .social-icons a {
+            align-items:left;
+            padding:8px;
+        }
+ 
+        .footer .social-icons img {
+            width: 31px;
+            height: 34px;
+            cursor: pointer;
+            background-color: black;
+            font-size: 25px;
+            text-align: center;
+            border-radius:20px; /* Add border radius here */
+        }
+ 
+        .footer p {
+            font-size: 16px;
+            color: #6c757d;
+        }
+ 
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: verdana; font-size: 200%; color:brown";><u>Krishna Nagini</u></h1>
+    <h2 style="font-family: Courier; font-size: 150%;margin-left:220px; color:blueviolet"><u>Introduction</u></h2>
+    <div class="container">
+        <p style="font-family: Courier; font-size: 120%; color:black; text-align: justify;">
+        <b>Hello! My name is Krishna Nagini, I am from Rajamundry present settled in Mumbai. I have completed my B.Tech in KLUniversity with 68%. I have done 2 projects in my 4th year. I have interest and passion about making bangles. I have done a few bangles for myself. I am currently working as a trainee as a web developer for 7 months. In these 7 months, I have learnt about <br>HTML,<br>CSS,<br>Bootstrap.<br> In my free time, I enjoy listening to songs, watching movies, cooking, and making bangles. I have a background in CSE, and I love to explore technologies in ethical hacking.</b></p>
+    </div>
+    <h2 style="font-family: Courier; font-size: 150%;margin-left:220px; color:blueviolet;"><b><u>Educational Qualifications:</u></b></h2>
+    <table style="font-family: Courier; font-size: 120%; color:black; text-align:center; width: 100%">
+        <tr>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td><b>Narayana e-techno school</b></td>
+            <td><b>2014</b></td>
+            <td><b>83%</b></td>
+        </tr>
+        <tr>
+            <td><b>Narayana College</b></td>
+            <td><b>2014-2016</b></td>
+            <td><b>80%</b></td>
+        </tr>
+        <tr>
+            <td><b>KLUniversity</b></td>
+            <td><b>2016-2020</b></td>
+            <td><b>68%</b></td>
+        </tr>
+    </table>
+    <p style="font-family: Courier; font-size: 150%; margin-left:220px; color:blueviolet;"><b><u>Hobbies:</u></b></p>
+    <ol style="font-family: Courier; font-size: 120%;margin-left:250px; color:black;"><b>
+        <li><b>Listening to music</b></li>
+        <li><b>Watching movies</b></li>
+        <li><b>Cooking</b></li>
+        <li><b>Collecting Pens</b></li>
+        <li><b>Writing Poems</b></li>
+        <li><b>Making Bangles</b></li>
+        <li><b>Greeting card making</b></li>
+        <li><b>Makeup Art (self)</b></li>
+        <li><b>Different types of word games</b></li>
+        <li><b>Walking</b></li>
+    </b></ol>
+    <p style="font-family: Courier; font-size: 150%; margin-left:220px; color:blueviolet;"><b><u>College life:</u></b></p>
+    <div class="container">
+        <p style="font-family: Courier; font-size: 120%; text-align: left; color:black; text-align: justify;"><b>
+        College Life is one of the most remarkable and lovable times of an individual's life. Unlike School Life, College Life has a different experience, and a person needs to have this experience in his/her life. College Life exposes us to whole new experiences which we always dream of experiencing after our school life. Lucky are those who get the chance to enjoy their college life, as many people don't get this chance due to their circumstances or financial issues. For every person, College Life has a different meaning. While some people spend their college life partying with friends, others become more cautious about their careers and study hard. Whatever the way, every individual enjoys their college life and always wishes to relive that time once it is over.
+        <br>My college life has been filled with learning, growth, and unforgettable experiences. From attending lectures and participating in group projects and making lifelong friends, every moment has contributed to my personal and academic development. The campus environment and supportive professors have inspired me to strive for excellence. Overall, my college years have been a transformative period that I will cherish forever.</b></p>
+    </div><br>
+    <div class="image-container">
+        <img src="practice project/campus life 1.jpg" alt="Image 1" class="left-image">
+        <img src="practice project/campus life.jpg" alt="Image 2" class="right-image">
+    </div><br>
+<footer class="footer">
+    <div class="container" style="margin-left:-140px;">
+        <div class="row">
+            <div class="col-3">
+                <h4>Myself</h4>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Educational Qualifications</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Percentages</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>Online Bookings</h4>
+                <ul>
+                    <li><a href="#">Exams</a></li>
+                    <li><a href="#">Slots</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><img src="practice project/fb.jpg" alt="Facebook"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="practice project/youtube.jpg" alt="YouTube"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="practice project/insta.jpg" alt="Instagram"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="practice project/linkedin.jpg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center><p class="Krishna Nagini">Copyright @ 2024 <strong>KrishnaNagini</strong> All rights reserved</p></center>
+</footer>
+</body>
+</html>

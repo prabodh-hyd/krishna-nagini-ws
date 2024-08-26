@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style:none;
+            text-decoration:dashed;
+        }
+        /*body styling*/
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color:#fff;
+            color:violet;
+            display: flex;
+            padding: 10px;
+        }
+        /* Profile container */
+        .profile-container {
+            background-color:rgba(0, 0, 0, 0.829);
+            border-radius: 10px;
+            overflow:visible;
+            width: 400%;
+            height:300%;
+            max-width: 600%;
+            max-height:500%;  
+        }
+        /* Profile header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color:rgb(49, 49, 231);
+            color:rgba(110, 11, 11, 0.904);
+        }
+        .profile-pic img {
+            border-radius:80%;
+            width: 120px;
+            height: 130px;
+            object-fit:inherit;
+            margin-right: 20px;
+        }
+        .profile-info h1 {
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        .profile-info p {
+            margin-bottom: 5px;
+        }
+        .follow-btn {
+            padding: 10px 20px;
+            background-color:rgb(49, 49, 231);
+            color:rgba(110, 11, 11, 0.904);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .follow-btn:hover {
+            background-color: #005fa3;
+            color: white;
+        }
+        /* Profile navigation */
+        .profile-nav {
+            background-color: rgb(49, 49, 231);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .profile-nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .profile-nav ul li a {
+            color:violet;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .profile-nav ul li a:hover {
+            background-color: #005fa3;
+            color: white;
+        }
+        /* Profile content */
+        .profile-content {
+            padding: 20px;
+            font-size: 17px;
+        }
+        .post {
+            background-color: rgb(49, 49, 231);
+            padding: 20px;
+            margin-bottom: 13px;
+            border-radius: 5px;
+        }
+        .post h2 {
+            margin-bottom: 13px;
+        }
+        .post p {
+            line-height: 1.4;
+        }
+        .post img{
+            width: 180px;
+            height: 180px;
+            font-size: 25px;
+            text-align:left;
+            padding: 3px;
+            border-radius:5px; /* Add border radius here */
+        }
+        /* Profile footer */
+        .profile-footer {
+            text-align: center;
+            padding: 10px;
+            background-color:black;
+            color:grey;
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-pic {
+                margin-bottom: 10px;
+            }
+            .profile-nav ul {
+                flex-direction: column;
+            }
+            .profile-nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="profile-pic">
+                <img src="profile.jpeg.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Krishna Nagini</h1>
+                <p>Web Developer | Probodh</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+        </header>
+
+        <nav class="profile-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Photos</a></li>
+            </ul>
+        </nav>
+        <section class="profile-content">
+            <article class="post">
+                <h2>About</h2>
+                <p>This is a sample post content. It can be text, images, or anything else that the user shares.</p>
+            </article>
+            <article class="post">
+                <h2>Posts</h2>
+                <p>This is a sample post content. It can be text, images, or anything else that the user shares.</p>
+            </article>
+            <article class="post">
+                <h2>Friends</h2>
+                <p>This is a sample post content. It can be text, images, or anything else that the user shares.</p>
+            </article>
+            <article class="post">
+                <h2>Photos</h2>
+                <img src="sai.jpg">
+                <img src="sis.jpg">
+                <img src="photobrowser/images/recent/IMG-20200426-WA0023.jpg">
+                <img src="photobrowser/images/marriage/55a.jpg">
+            </article>
+            <!-- Add more posts as needed -->
+        </section>
+
+        <footer class="profile-footer">
+            <center><p class="Krishna Nagini">Copyright @ 2024 <strong>KrishnaNagini</strong> All rights reserved</p></center>
+        </footer>
+    </div>
+</body>
+</html>
