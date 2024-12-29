@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Side Social Media Icons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-content {
+    flex: 1;
+}
+
+.address {
+    text-align: left;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between icons */
+    position: absolute;
+    right: 20px;
+}
+
+.social-media-icons a img {
+    width: 30px; /* Adjust the size of the icons */
+    height: auto;
+}
+    <footer>
+        <div class="footer-content">
+            <div class="address">
+                <p>123 Main Street, Anytown, USA</p>
+            </div>
+        </div>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

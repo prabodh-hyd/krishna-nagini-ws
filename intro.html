@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> KrishnaNagini</title>
+</head>
+<body>
+<h1>Heading</h1>
+<p1>paragraph</p1>
+<p>Hello KrishnaNagini</p>
+<script>
+for (let i = 1; i <= 9; i++) {
+    // Initialize an empty row string
+    let row = "";
+
+    // Iterate through columns (1 to 9)
+    for (let j = 1; j <= 9; j++) {
+        // Calculate the product of i and j
+        const product = i * j;
+
+        // Append the product to the row string
+        row += `${product}\t`; // Use a tab character for spacing
+    }
+
+    // Log the entire row
+    console.log(row);
+}
+</script>
+</body>
+</html>
