@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery CSS toggleClass() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,h3").toggleClass("demo")
+            });     
+        });
+    </script>
+    <style>
+        .demo{
+            background:black;
+            color: goldenrod;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>KLU</h1>
+        <p>This is Krishna</p>
+
+        <h2>KLU</h2>
+        <p>This is Krishna</p>
+
+        <h3>KLU</h3>
+        <p>This is Krishna</p>
+
+        <button>Add/Remove a class</button>
+    </body>
+</html>

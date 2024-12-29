@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery CSS toggleClass() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt ="";
+                txt +="Inner Width= " +$(".demo").innerWidth();
+                $(".demo").html(txt);
+            });     
+        });
+    </script>
+    <style>
+        .demo{
+            height: 110px;
+            width: 300px;
+            padding: 13px;
+            margin: 10px;
+            border: 2px solid whitesmoke;
+            background: pink;
+            color:crimson;
+            font-size: 25px;
+        }
+        button{
+            background:black;
+            color: goldenrod;
+            font-size: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>KLU</h1>
+        <h2>This is Krishna</h2>
+
+        <div class="demo"></div>
+
+        <button>Inner Width</button>
+        <p>click to get innerWidth</p>
+    </body>
+</html>

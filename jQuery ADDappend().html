@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery ADD append() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").append("<em>website</em>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>KLU</h1>
+    <p>Append a word in the heading</p>
+    <button id="btn">APPEND</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery slidetoggle Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slide").click(function(){
+                $("#mydiv").slideToggle("fast")
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <div id="slide">Slide Toggle by clicking</div>
+        <div id="mydiv">Demo text</div>
+    </body>
+</html>

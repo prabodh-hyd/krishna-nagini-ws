@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery CSS removeClass Single() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1, h2, h3").removeClass("demo")
+            });     
+        });
+    </script>
+    <style>
+        .demo{
+            background: aqua;
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <h1 class="demo">KLU</h1>
+    <p>Demo text</p>
+
+    <h2 class="demo">Vaddeswaram</h1>
+    <p>Demo text</p>
+
+    <h3 class="demo">Vijayawada</h1>
+    <p>Demo text</p>
+    <button>Remove a Single class from different elements</button>
+</body>
+</html>

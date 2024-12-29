@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery CSS addClass Multiple() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1").addClass("demo example")
+            });     
+        });
+    </script>
+    <style>
+        .demo{
+            background: aqua;
+            color:black
+        }
+        .example{
+            border:4px dashed goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>KLU</h1>
+    <p>Demo text</p>
+
+    <h2>Vijayawada</h2>
+    <p>Another demo text</p>
+    
+    <button>Add a Multiple classes</button>
+</body>
+</html>

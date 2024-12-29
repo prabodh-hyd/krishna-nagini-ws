@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery REMOVE remove() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("p").remove();
+            });
+        });
+    </script>
+    <style>
+        p{
+            height: 110px;
+            width: 80px;
+            border: 2px solid white;
+            background: black;
+            color:aqua
+        }
+    </style>
+</head>
+<body>
+    <h1>KLU</h1>
+    <p>Click to remove this line</p>
+    <p>Click to remove this line too</p>
+    <button id="btn">REMOVE</button>
+</body>
+</html>

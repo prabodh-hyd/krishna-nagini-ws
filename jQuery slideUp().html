@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery slideUp Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slide").click(function(){
+                $("#mydiv").slideUp("fast")
+            });
+        });
+    </script>
+    <style>
+        #mydiv #slide{
+        padding:5px;
+        text-align:left;
+        font-size:17px;
+        background-color: orange;
+        border: 2px solid blue;
+        }
+        #mydiv{
+        padding:15px;
+        font-size:25px;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="slide">Slide up by clicking</div>
+        <div id="mydiv">Demo text</div>
+    </body>
+</html>

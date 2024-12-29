@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").animate({left: '200px'});
+        });
+    });
+</script> 
+<style>
+    div{
+        background: red;
+        border: 2px solid blue;
+        height: 70px;
+        width:  250px;
+        color:white;
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <button>Animation</button>
+    <p>jQuery Animation</p>
+    <div>This will get animated</div>
+</body>
+</html>

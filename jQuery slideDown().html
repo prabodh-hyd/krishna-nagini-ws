@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery slideDown Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slide").click(function(){
+                $("#mydiv").slideDown("slow")
+            });
+        });
+    </script>
+    <style>
+        #mydiv #slide{
+        padding:5px;
+        text-align:left;
+        font-size:17px;
+        }
+        #mydiv{
+        padding:15px;
+        display: none;
+        font-size:25px;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="slide">Slide down by clicking</div>
+        <div id="mydiv">Demo text</div>
+    </body>
+</html>

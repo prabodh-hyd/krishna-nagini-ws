@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery FadeIn Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div").hide();
+            $("#fadeInButton").click(function(){
+                $("#div").fadeIn();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="div">Paragraph will fade in after clicking the button.</p>
+    <button id="fadeInButton">Fade In Paragraph</button>
+</body>
+</html>

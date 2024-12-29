@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Show Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Hide the elements initially
+            $("#textToShow").hide();
+            $(".showMe").hide();
+
+            // Show the element with id="showButton" when clicked
+            $("#showButton").click(function(){
+                $("#textToShow").show();
+            });
+            // Show the elements with class="showMe" when clicked
+            $(".showMeButton").click(function(){
+                $(".showMe").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Show Example</h1>
+    <p id="textToShow">This is a paragraph that will be shown when you click the button below.</p>
+    <button id="showButton">Show Paragraph</button>
+
+    <p class="showMe">This is another paragraph that will be shown when you click the button below.</p>
+    <button class="showMeButton">Show This Paragraph</button>
+</body>
+</html>

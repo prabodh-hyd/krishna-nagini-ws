@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery CSS addClass() Single to different elements example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,h3").addClass("demo")
+            });     
+        });
+    </script>
+    <style>
+        .demo{
+            background: aqua;
+            color:black
+        }
+    </style>
+</head>
+<body>
+    <h1>KLU</h1>
+    <p>Demo text</p>
+
+    <h2>Vaddeswaram</h2>
+    <p>Another demo text</p>
+
+    <h3>Vijayawada</h2>
+    <p>Yet another demo text</p>
+    
+    <button>Add a Single class to different elements</button>
+</body>
+</html>

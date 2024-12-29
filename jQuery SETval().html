@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Set val() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#ename").val("Krishna Nagini");
+            });
+            $("#btn2").click(function(){
+                $("#edept").val("Web Developer");
+            });
+            $("#btn3").click(function(){
+                $("#ezone").val("North");
+            }); 
+        });
+    </script>
+    <style>
+        button{
+            background: aqua;
+            color:black;
+            font-size: 20px;
+            text-align: left;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <form>
+        <p> Employee Name: <input type="text" id="ename" value=""/></p>
+        <p >Employee Department: <input type="text" id="edept" value=""/></p>
+        <p > Employee Zone: <input type="text" id="ezone" value=""/></p>
+        <button id="btn1">Employee Name</button>
+        <button id="btn2">Employee Department</button>
+        <button id="btn3">Employee Zone</button>
+    </form>
+</body>
+</html>

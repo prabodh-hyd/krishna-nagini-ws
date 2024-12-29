@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Class Selector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Select elements with class="highlight" and change their background color to yellow
+            $(".highlight").css("background-color", "yellow");
+
+            // Select elements with class="boldText" and make their text bold
+            $(".boldText").css("font-weight", "bold");
+        });
+    </script>
+</head>
+<body>
+    <h1 class="highlight">This heading has a yellow background.</h1>
+    <p class="boldText">This paragraph has bold text.</p>
+    <p>This paragraph is not affected by the class selectors.</p>
+</body>
+</html>

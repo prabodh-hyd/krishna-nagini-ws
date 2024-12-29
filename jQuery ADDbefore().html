@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery ADD after() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h2").before("<p>Krishna</p>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>KLU</h2>
+    <h2>KLU</h2>
+    <h2>KLU</h2>
+    <button id="btn">Add content before the h2</button>
+</body>
+</html>

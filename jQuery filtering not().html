@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Filtering not() example</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").not(".intro").css("background-color", "yellow");
+});
+</script>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<p>My name is Krishna (index 0).</p>
+<p class="intro">Krishna Nagini (index 1).</p>
+<p class="intro">I live in Mumbai (index 2).</p>
+<p>My best friend is Sravya (index 3).</p>
+
+</body>
+</html>

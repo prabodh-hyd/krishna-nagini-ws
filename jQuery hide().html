@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Hide Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Hide elements with class="hideClass"
+            $("#hideClassButton").click(function(){
+                $(".hideClass").hide();
+            });
+
+            // Hide all <p> elements
+            $("#hideAllPButton").click(function(){
+                $("p").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="hideClassButton">Hide Class Elements</button>
+    <button id="hideAllPButton">Hide All Paragraphs</button>
+
+    <div id="content">
+        <h1>This is a heading</h1>
+        <p class="hideClass">This is a paragraph with class "hideClass".</p>
+        <p>This is another paragraph without class "hideClass".</p>
+    </div>
+</body>
+</html>

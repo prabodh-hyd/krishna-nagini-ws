@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery REMOVE empty() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("p").empty();
+            });
+        });
+    </script>
+    <style>
+        p{
+            height: 135px;
+            width: 100px;
+            border: 2px solid white;
+            background: black;
+            color:aqua
+        }
+    </style>
+</head>
+<body>
+    <h1>KLU</h1>
+    <p>Click to remove this line(only the line)</p>
+    <p>Click to remove this line too(only the line)</p>
+    <button id="btn">EMPTY</button>
+</body>
+</html>

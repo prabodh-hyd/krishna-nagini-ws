@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Get text() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#demo").text());
+            });
+        });
+    </script>
+    <style>
+        #demo{
+            background: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        button{
+            background: aqua;
+            color:black;
+            font-size: 20px;
+            text-align: left;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">This is a <em>demo text.</em> This is another <strong>demo text</strong></p>
+    <p>Click for text content</p>
+    <button id="btn1">Text</button>
+</body>
+</html>

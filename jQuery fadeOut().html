@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery FadeOut Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeOutButton").click(function(){
+                $("#div").fadeOut();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="div">This is a paragraph that will fade out when you click the button below.</p>
+    <button id="fadeOutButton">Fade Out Paragraph</button>
+</body>
+</html>

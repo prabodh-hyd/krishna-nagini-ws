@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Set text() example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").text("This is a demo text.")
+            });
+        });
+    </script>
+    <style>
+        p{
+            background: aqua;
+            color:black;
+            font-size: 20px;
+        }
+        button{
+            background: aqua;
+            color:black;
+            font-size: 20px;
+            text-align: left;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Click the below buttons to set the text.</p>
+    <button id="btn1">Set the Text</button>
+</body>
+</html>

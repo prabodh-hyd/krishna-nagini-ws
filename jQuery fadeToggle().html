@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery FadeToggle Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeToggleButton").click(function(){
+                $("#div").fadeToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="div">This is a paragraph that will toggle fade when you click the button below.</p>
+    <button id="fadeToggleButton">Fade Toggle Paragraph</button>
+</body>
+</html>
